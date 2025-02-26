@@ -1,0 +1,3 @@
+[submodule "src/vendor/nanobind"]
+	path = src/vendor/nanobind
+	url = https://github.com/wjakob/nanobind.git

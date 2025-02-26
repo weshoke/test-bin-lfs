@@ -1,0 +1,19 @@
+[project]
+name = "bin_lfs"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["scikit-build-core"]
+build-backend = "scikit_build_core.build"
+
+[tool.scikit-build]
+build-dir = "build"
+build.verbose = true
+# Components are specified in the CMake `install` command
+# See `src/cpp/CMakeLists.txt` for the name of the component 
+# we care about for installing the built binary.
+install.components = ["Wheel"]
